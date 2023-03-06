@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c0ec397cb4d8f4c958b7f0bc3f545c, type: 3}
+  m_Name: Shield Group
+  m_EditorClassIdentifier: 
+  demoEffectCollection:
+  - {fileID: 11400000, guid: 0f28fb75103090e449b745f41fe3b11c, type: 2}
+  - {fileID: 11400000, guid: 38578179895abb14fa4bc20d2f2e2a61, type: 2}
+  - {fileID: 11400000, guid: 9f1465dabf2f2ec4a835fd50bc504c62, type: 2}
+  - {fileID: 11400000, guid: b72596da8a58ad84088b3c4cb50d7950, type: 2}
+  - {fileID: 11400000, guid: 6d1b09ff80da9d24dac76ae5fb9a74a1, type: 2}

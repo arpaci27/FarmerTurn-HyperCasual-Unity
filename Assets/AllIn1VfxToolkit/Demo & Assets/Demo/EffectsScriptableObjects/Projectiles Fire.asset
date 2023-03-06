@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c1d07ca14386b448937146f73392cb, type: 3}
+  m_Name: Projectiles Fire
+  m_EditorClassIdentifier: 
+  onlyOneAtATime: 0
+  canBePlayedAgain: 1
+  randomSpreadRadius: 0
+  cooldown: 0.3
+  isShootProjectile: 1
+  effectPrefab: {fileID: 0}
+  spawnTouchingFloor: 0
+  projectileSpeed: 15
+  projectilePrefab: {fileID: 7493796544200936264, guid: 625a5893477f7b94da52aa0c2e1eb1d8,
+    type: 3}
+  muzzleFlashPrefab: {fileID: 2590524686154786745, guid: 44240b632ed6d3b49a31f2ef45dfc9cd,
+    type: 3}
+  impactPrefab: {fileID: 416251089823111746, guid: 240c830bfe588ad4f9925288b65d7a18,
+    type: 3}
+  doCameraShake: 1
+  mainEffectShakeAmount: 0.1
+  projectileImpactShakeAmount: 0.15
+  positionOffset: {x: 0, y: 0, z: 0}
+  scaleMultiplier: 1

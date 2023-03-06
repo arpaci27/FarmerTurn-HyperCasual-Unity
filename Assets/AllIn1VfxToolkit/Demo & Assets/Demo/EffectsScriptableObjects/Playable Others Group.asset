@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c0ec397cb4d8f4c958b7f0bc3f545c, type: 3}
+  m_Name: Playable Others Group
+  m_EditorClassIdentifier: 
+  demoEffectCollection:
+  - {fileID: 11400000, guid: 7960db61b729cb648a2177a3f1a84198, type: 2}
+  - {fileID: 11400000, guid: a24a599d3477dd148891d0b99a836020, type: 2}
+  - {fileID: 11400000, guid: f1bd0e13fce394941ae794e48f2b04f8, type: 2}
+  - {fileID: 11400000, guid: 47521b0e034c0e643bb647221453b71e, type: 2}
+  - {fileID: 11400000, guid: a9cee579e75fe0f4b97011296a2ac1a0, type: 2}
+  - {fileID: 11400000, guid: 9b5fc6a0c21574b44b70f47470c76914, type: 2}
+  - {fileID: 11400000, guid: 0bdb0af86b2593c41a29c3660a29f0b5, type: 2}
+  - {fileID: 11400000, guid: 05948df1db6e70c42b7ed1114a52ed84, type: 2}

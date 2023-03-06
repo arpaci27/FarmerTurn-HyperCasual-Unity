@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c0ec397cb4d8f4c958b7f0bc3f545c, type: 3}
+  m_Name: Statics1
+  m_EditorClassIdentifier: 
+  demoEffectCollection:
+  - {fileID: 11400000, guid: de9ddf21f9f685c40aca6feb60a0c114, type: 2}
+  - {fileID: 11400000, guid: 3d852b57762b99543a2668635d883124, type: 2}
+  - {fileID: 11400000, guid: e6b76ae8f1642644c9aeb47501793d43, type: 2}
+  - {fileID: 11400000, guid: 33a80fc9384edec4ea96b414c034722f, type: 2}
+  - {fileID: 11400000, guid: 40e53777b47263141b9741f35a158646, type: 2}
+  - {fileID: 11400000, guid: 7ea0a102c50d38d4e978c211c4d0a3f8, type: 2}
+  - {fileID: 11400000, guid: 8bdb66fcf5019ad4a829587f2e4a2f1e, type: 2}
+  - {fileID: 11400000, guid: f8537fa3ce8924847835f08c42fbb3c6, type: 2}
+  - {fileID: 11400000, guid: 062bd8cb92551654bb159a8278de6f1b, type: 2}
+  - {fileID: 11400000, guid: cba8e358f418d24499ebbc429dfd84a5, type: 2}
+  - {fileID: 11400000, guid: 28ceb67735581cf40af11de84b62500d, type: 2}

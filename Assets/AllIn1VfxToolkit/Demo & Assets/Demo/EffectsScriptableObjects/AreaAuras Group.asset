@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c0ec397cb4d8f4c958b7f0bc3f545c, type: 3}
+  m_Name: AreaAuras Group
+  m_EditorClassIdentifier: 
+  demoEffectCollection:
+  - {fileID: 11400000, guid: 80c5e58b2ac4fed41b9b49bd3ee31de0, type: 2}
+  - {fileID: 11400000, guid: 0ac2fbad66ef1314f8a9574a61c30148, type: 2}
+  - {fileID: 11400000, guid: 856aafc32e1426942b937115f41d8357, type: 2}
+  - {fileID: 11400000, guid: e689c7f4df62ed8458f53fd6c9ec16d3, type: 2}
+  - {fileID: 11400000, guid: 27b18a3b866a81c439ec146d6c365cef, type: 2}
+  - {fileID: 11400000, guid: 4e5b27977623d0245a0aff954a08d9fb, type: 2}

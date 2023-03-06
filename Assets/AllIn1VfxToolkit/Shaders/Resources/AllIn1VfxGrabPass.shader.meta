@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: dc18713bda348b240a295c10f7e92458
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _ShapeDistortTex: {fileID: 2800000, guid: fcb027caad6963b4a80539bbce0d10e9, type: 3}
+  - _Shape2Tex: {instanceID: 0}
+  - _Shape2DistortTex: {fileID: 2800000, guid: fcb027caad6963b4a80539bbce0d10e9, type: 3}
+  - _Shape3Tex: {instanceID: 0}
+  - _Shape3DistortTex: {fileID: 2800000, guid: fcb027caad6963b4a80539bbce0d10e9, type: 3}
+  - _ColorRampTex: {instanceID: 0}
+  - _ColorRampTexGradient: {instanceID: 0}
+  - _GlowTex: {instanceID: 0}
+  - _MaskTex: {fileID: 2800000, guid: 2f6642b43dc405d498acba7e288c068c, type: 3}
+  - _DistortTex: {fileID: 2800000, guid: fcb027caad6963b4a80539bbce0d10e9, type: 3}
+  - _DistNormalMap: {fileID: 2800000, guid: 06907d08092c41f4aa8b5b3cbe5f9fa2, type: 3}
+  - _VertOffsetTex: {fileID: 2800000, guid: 48da24d771916524899d36e4bfe7f762, type: 3}
+  - _FadeTex: {fileID: 2800000, guid: 854b25bc08516364da5a786b1cad247e, type: 3}
+  - _FadeBurnTex: {instanceID: 0}
+  - _Shape1MaskTex: {fileID: 2800000, guid: db8fa36fcfe9738418db54ee0fe17fdf, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

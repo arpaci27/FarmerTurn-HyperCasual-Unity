@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c0ec397cb4d8f4c958b7f0bc3f545c, type: 3}
+  m_Name: Explosion Group
+  m_EditorClassIdentifier: 
+  demoEffectCollection:
+  - {fileID: 11400000, guid: 7481046c0aff40d4fb17d42d0fb2840d, type: 2}
+  - {fileID: 11400000, guid: 5273513a9f6311a4a9cc4c874ba563e9, type: 2}
+  - {fileID: 11400000, guid: da7dceb3eb09136489a03378d91e98f0, type: 2}
+  - {fileID: 11400000, guid: f5018390849215c4292ceb24a1779004, type: 2}
+  - {fileID: 11400000, guid: add35f8a1a24bb34caf78aa5d441f308, type: 2}
+  - {fileID: 11400000, guid: 70e25ccbe9407394595aa82178a48a63, type: 2}
+  - {fileID: 11400000, guid: 4e8539315ba43d14f841a29a7569ba24, type: 2}
+  - {fileID: 11400000, guid: 2d2a3b35561e37f4d9e06752b67f4984, type: 2}

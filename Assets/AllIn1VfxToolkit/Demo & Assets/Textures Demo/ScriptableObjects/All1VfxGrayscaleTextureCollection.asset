@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe0244c061406149b7407a688699f9a, type: 3}
+  m_Name: All1VfxGrayscaleTextureCollection
+  m_EditorClassIdentifier: 
+  collectionName: Greyscale Gradients
+  demoTextureCollection:
+  - {fileID: 2800000, guid: 733b54a2ec28df34c8b4e4042b6615b3, type: 3}
+  - {fileID: 2800000, guid: 2f066f54c4985104c82aba65fab70cb3, type: 3}
+  - {fileID: 2800000, guid: 1776ebf4a660f87449b7ca4aedc66d49, type: 3}
+  - {fileID: 2800000, guid: db8fa36fcfe9738418db54ee0fe17fdf, type: 3}
+  - {fileID: 2800000, guid: 6859e9b4bb5bcba4682854f0c618a222, type: 3}
+  - {fileID: 2800000, guid: 9982d10d2ff48f843858dd0463aa7a7f, type: 3}
+  - {fileID: 2800000, guid: ca96557312bc1dd4caacf0a880881d29, type: 3}
+  - {fileID: 2800000, guid: 3e20efdcab4a6e240a9b82c6abf03ae5, type: 3}
+  - {fileID: 2800000, guid: 7a5332c80b15bc44ea9874b79e4d9889, type: 3}
+  - {fileID: 2800000, guid: 56b8fff5676f9e741b79df2ba089b110, type: 3}
+  - {fileID: 2800000, guid: 6fddac60cf9eada4ebad96687cb4dea4, type: 3}
+  - {fileID: 2800000, guid: e067d4fe3fba3a3428fd588f9e93fc0a, type: 3}
+  - {fileID: 2800000, guid: fc0f4579d959760498c0a4da45cd07e7, type: 3}
+  - {fileID: 2800000, guid: ec1557ffbc011b24ebabf303fc4b3007, type: 3}
+  - {fileID: 2800000, guid: 180c2751e46bf154aa1be4187f24096a, type: 3}
+  - {fileID: 2800000, guid: fadb12822bee63748bffde4352642d6c, type: 3}
+  - {fileID: 2800000, guid: 217fc87005ac259489568af0a0b797e2, type: 3}
+  - {fileID: 2800000, guid: 40f9f053a6e2dda46b6c089e4378467f, type: 3}
+  - {fileID: 2800000, guid: c894103bc99f8374d95c4bdea51a3583, type: 3}
+  - {fileID: 2800000, guid: 86bcb483f11b6c94fb965c6643d82454, type: 3}
+  - {fileID: 2800000, guid: 76ba854393aba634893a750ec98ef712, type: 3}
+  - {fileID: 2800000, guid: d61bbffb09932ac49ad0346f284d95dc, type: 3}
+  - {fileID: 2800000, guid: d16344c6d7d9cc943bdabefd8ca878e9, type: 3}
+  - {fileID: 2800000, guid: a4b6f041afa158c428034617b825b01c, type: 3}

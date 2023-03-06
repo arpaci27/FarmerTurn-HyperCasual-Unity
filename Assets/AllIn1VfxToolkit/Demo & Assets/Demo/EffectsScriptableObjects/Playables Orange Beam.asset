@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c1d07ca14386b448937146f73392cb, type: 3}
+  m_Name: Playables Orange Beam
+  m_EditorClassIdentifier: 
+  onlyOneAtATime: 0
+  canBePlayedAgain: 1
+  randomSpreadRadius: 0
+  cooldown: 5.4
+  isShootProjectile: 0
+  effectPrefab: {fileID: 2149182546648063064, guid: 5fd51f8a759b0ee47a7514f35dceda52,
+    type: 3}
+  spawnTouchingFloor: 0
+  projectileSpeed: 15
+  projectilePrefab: {fileID: 0}
+  muzzleFlashPrefab: {fileID: 0}
+  impactPrefab: {fileID: 0}
+  doCameraShake: 0
+  mainEffectShakeAmount: 0.2
+  projectileImpactShakeAmount: 1
+  positionOffset: {x: 0, y: 0, z: 0}
+  scaleMultiplier: 0.6

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c0ec397cb4d8f4c958b7f0bc3f545c, type: 3}
+  m_Name: Statics2
+  m_EditorClassIdentifier: 
+  demoEffectCollection:
+  - {fileID: 11400000, guid: 063d5b853e66cda42ac747bf57f009b8, type: 2}
+  - {fileID: 11400000, guid: 948e252bc5935bb49887b48fd2f4f862, type: 2}
+  - {fileID: 11400000, guid: a129010d901a0d14ca6334a9ff228142, type: 2}
+  - {fileID: 11400000, guid: 770177a4457775c478d5b77789e41a83, type: 2}
+  - {fileID: 11400000, guid: 119ba082ccf0f4b4080bd085f4c25ff0, type: 2}
+  - {fileID: 11400000, guid: 5ef3354e1856fb14eb0c0b316e723333, type: 2}
+  - {fileID: 11400000, guid: 780cd32f81f41684089b853730216f32, type: 2}
