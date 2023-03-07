@@ -8,7 +8,7 @@ public class TapToSpeedUpController : MonoBehaviour
      
 
 
-     public void 
+     
      
 
 }

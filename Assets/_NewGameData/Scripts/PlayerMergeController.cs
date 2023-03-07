@@ -7,11 +7,13 @@ using UnityEngine;
 public class PlayerMergeController : MonoBehaviour
 {
     public PlayerSpawnController spawnController;
+    public Transform finsihLine;
+    public GameObject secondPlayer;
 
 
     public void MergePlayers()
     {
-        if(spawnController.activePlayersLevel1.Count >= 2)
+        if(spawnController.activePlayersLevel1.Count > 2)
         {
             var firstPlayer = spawnController.activePlayersLevel1[spawnController.activePlayersLevel1.Count - 1];
             var secondPlayer = spawnController.activePlayersLevel1[spawnController.activePlayersLevel1.Count - 2];
@@ -25,17 +27,18 @@ public class PlayerMergeController : MonoBehaviour
 
             var centralPoint = (firstPlayer.transform.position + secondPlayer.transform.position) / 2f;
 
-            //firstPlayer.transform.position = centralPoint;
             firstPlayer.transform.DOMove(centralPoint, 0.5f);
             firstPlayer.transform.GetComponent<PlyerEffectController>().smokeParticle.SetActive(true);
-            Destroy(firstPlayer, 0.6f);
-            spawnController.activePlayersLevel1.RemoveAt(spawnController.activePlayersLevel1.Count - 1);
+            spawnController.activePlayersLevel1.Remove(firstPlayer);
 
-            //secondPlayer.transform.position = centralPoint;
+            Destroy(firstPlayer, 0.6f);
+
             secondPlayer.transform.DOMove(centralPoint, 0.5f);
             secondPlayer.transform.GetComponent<PlyerEffectController>().smokeParticle.SetActive(true);
+            spawnController.activePlayersLevel2.Remove(secondPlayer);
+
             Destroy(secondPlayer, 0.6f);
-            spawnController.activePlayersLevel2.RemoveAt(spawnController.activePlayersLevel1.Count - 2);
+            spawnController.AddPlayer2(secondPlayer);
         }
         
 

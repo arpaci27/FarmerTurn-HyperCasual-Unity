@@ -40,7 +40,6 @@ public class UIController : MonoBehaviour
             for (int i = 0; i < spawnController.activePlayersLevel1.Count; i++)
             {
                 spawnController.activePlayersLevel1[i].GetComponent<SplineFollower>().followSpeed -= 4;
-
             }
         }
     }

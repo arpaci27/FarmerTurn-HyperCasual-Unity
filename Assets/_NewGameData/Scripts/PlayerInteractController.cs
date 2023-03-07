@@ -12,6 +12,9 @@ public class PlayerInteractController : MonoBehaviour
     public GameObject max;
     private SplineFollower splineFollower;
     private ItemsProduceController ItemsProduceController;
+    public GameObject moneyText;
+    public RectTransform moneyRect;
+    public GameObject canvas;
 
 
     private void Awake()
@@ -64,6 +67,9 @@ public class PlayerInteractController : MonoBehaviour
         {
             stackParent.transform.GetChild(0).DOMove(dropPlace.transform.position, 0.4f);
             stackParent.GetChild(0).SetParent(null);
+            var moneytext = Instantiate(moneyText, Vector3.zero, Quaternion.identity);
+            moneytext.transform.SetParent(canvas.transform);
+            Destroy(moneytext, 1f);
         }
         max.gameObject.SetActive(false);
         yield return new WaitForSeconds(0.5f);
