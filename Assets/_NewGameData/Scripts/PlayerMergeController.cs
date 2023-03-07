@@ -8,7 +8,7 @@ public class PlayerMergeController : MonoBehaviour
 {
     public PlayerSpawnController spawnController;
     public Transform finsihLine;
-    public GameObject secondPlayer;
+    public GameObject player2Prefab;
 
 
     public void MergePlayers()
@@ -33,12 +33,12 @@ public class PlayerMergeController : MonoBehaviour
 
             Destroy(firstPlayer, 0.6f);
 
-            secondPlayer.transform.DOMove(centralPoint, 0.5f);
+            secondPlayer.transform.DOMove(centralPoint, 0.5f).OnComplete<>; //Destroy godunu on complete  e yazýcýn usda
             secondPlayer.transform.GetComponent<PlyerEffectController>().smokeParticle.SetActive(true);
             spawnController.activePlayersLevel2.Remove(secondPlayer);
 
             Destroy(secondPlayer, 0.6f);
-            spawnController.AddPlayer2(secondPlayer);
+            spawnController.AddPlayer2(player2Prefab);
         }
         
 

@@ -67,9 +67,9 @@ public class PlayerInteractController : MonoBehaviour
         {
             stackParent.transform.GetChild(0).DOMove(dropPlace.transform.position, 0.4f);
             stackParent.GetChild(0).SetParent(null);
-            var moneytext = Instantiate(moneyText, Vector3.zero, Quaternion.identity);
-            moneytext.transform.SetParent(canvas.transform);
-            Destroy(moneytext, 1f);
+            //var moneytext = Instantiate(moneyText, Vector3.zero, Quaternion.identity);
+            //moneytext.transform.SetParent(canvas.transform);
+            //Destroy(moneytext, 1f);
         }
         max.gameObject.SetActive(false);
         yield return new WaitForSeconds(0.5f);

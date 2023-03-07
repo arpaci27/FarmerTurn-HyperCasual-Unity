@@ -1344,7 +1344,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnController: {fileID: 686002959}
   finsihLine: {fileID: 112524416}
-  secondPlayer: {fileID: 0}
+  player2Prefab: {fileID: 7592625562260620607, guid: 81552cc807a1de54a8897c0cbb7edc66,
+    type: 3}
 --- !u!4 &300451315
 Transform:
   m_ObjectHideFlags: 0
