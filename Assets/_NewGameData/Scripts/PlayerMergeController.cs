@@ -2,6 +2,7 @@ using DG.Tweening;
 using Dreamteck.Splines;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class PlayerMergeController : MonoBehaviour
@@ -13,31 +14,22 @@ public class PlayerMergeController : MonoBehaviour
 
     public void MergePlayers()
     {
-        if(spawnController.activePlayersLevel1.Count > 2)
+        List<GameObject> temp = new List<GameObject>();
+        if(spawnController.activePlayersLevel1.Count >= 2)
         {
-            var firstPlayer = spawnController.activePlayersLevel1[spawnController.activePlayersLevel1.Count - 1];
-            var secondPlayer = spawnController.activePlayersLevel1[spawnController.activePlayersLevel1.Count - 2];
-
-            firstPlayer.GetComponent<SplineFollower>().followSpeed = 0;
-            firstPlayer.GetComponent<SplineFollower>().enabled = false;
-
-            secondPlayer.GetComponent<SplineFollower>().followSpeed = 0;
-            secondPlayer.GetComponent<SplineFollower>().enabled = false;
-
-
-            var centralPoint = (firstPlayer.transform.position + secondPlayer.transform.position) / 2f;
-
-            firstPlayer.transform.DOMove(centralPoint, 0.5f);
-            firstPlayer.transform.GetComponent<PlyerEffectController>().smokeParticle.SetActive(true);
-            spawnController.activePlayersLevel1.Remove(firstPlayer);
-
-            Destroy(firstPlayer, 0.6f);
-
-            secondPlayer.transform.DOMove(centralPoint, 0.5f).OnComplete<>; //Destroy godunu on complete  e yazýcýn usda
-            secondPlayer.transform.GetComponent<PlyerEffectController>().smokeParticle.SetActive(true);
-            spawnController.activePlayersLevel2.Remove(secondPlayer);
-
-            Destroy(secondPlayer, 0.6f);
+            var centralPoint = (spawnController.activePlayersLevel1[0].transform.position + spawnController.activePlayersLevel1[1].transform.position) / 2f;
+            for (int i = 0; i < 2; i++)
+            {
+                var Player = spawnController.activePlayersLevel1[0];
+                Player.GetComponent<SplineFollower>().followSpeed = 0;
+                Player.GetComponent<SplineFollower>().enabled = false;
+                temp.Add(Player); 
+                spawnController.activePlayersLevel1.Remove(Player);
+                temp[0].transform.GetComponent<PlyerEffectController>().smokeParticle.SetActive(true);
+                temp[i].transform.DOMove(centralPoint, 0.5f).OnComplete(() => {
+                    temp[0].SetActive(false); temp[1].SetActive(false);
+                });
+            }
             spawnController.AddPlayer2(player2Prefab);
         }
         

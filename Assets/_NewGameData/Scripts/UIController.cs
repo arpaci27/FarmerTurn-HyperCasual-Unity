@@ -29,7 +29,11 @@ public class UIController : MonoBehaviour
             tapToSpeedUpUI.SetActive(false);
             for (int i = 0; i < spawnController.activePlayersLevel1.Count; i++)
             {
-                spawnController.activePlayersLevel1[i].GetComponent<SplineFollower>().followSpeed += 4;
+                if (spawnController.activePlayersLevel1[i]!= null)
+                {
+                    spawnController.activePlayersLevel1[i].GetComponent<SplineFollower>().followSpeed += 4;
+
+                }
 
             }
         }
@@ -39,7 +43,11 @@ public class UIController : MonoBehaviour
             tapToSpeedUpUI.SetActive(true);
             for (int i = 0; i < spawnController.activePlayersLevel1.Count; i++)
             {
-                spawnController.activePlayersLevel1[i].GetComponent<SplineFollower>().followSpeed -= 4;
+                if(spawnController.activePlayersLevel1[i] != null)
+                {
+                    spawnController.activePlayersLevel1[i].GetComponent<SplineFollower>().followSpeed -= 4;
+
+                }
             }
         }
     }
