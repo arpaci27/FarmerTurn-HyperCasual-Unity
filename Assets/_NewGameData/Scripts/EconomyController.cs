@@ -7,7 +7,7 @@ public class EconomyController : MonoBehaviour
     public static EconomyController Instance;
     public int stackedAmount = 0;
 
-    public int moneyAmount = 220;
+    public int moneyAmount = 320;
 
     private void Awake()
     {

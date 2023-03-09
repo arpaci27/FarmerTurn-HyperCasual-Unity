@@ -65,7 +65,7 @@ public class PlayerInteractController : MonoBehaviour
         int stackco = stackParent.childCount;
         for (int i = 0; i < stackco; i++)
         {
-            stackParent.transform.GetChild(0).DOMove(dropPlace.transform.position, 0.8f).OnComplete(() => UIController.instance.MoneyTextDisplayer());
+            stackParent.transform.GetChild(0).DOMove(dropPlace.transform.position, 0.3f).OnComplete(() => UIController.instance.MoneyTextDisplayer());
             stackParent.GetChild(0).SetParent(null);
             EconomyController.Instance.moneyAmount += 5;
             EconomyController.Instance.stackedAmount++;
