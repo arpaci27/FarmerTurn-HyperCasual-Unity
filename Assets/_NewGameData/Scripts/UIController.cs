@@ -1,17 +1,26 @@
 using Dreamteck.Splines;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
+    public static UIController instance;
     public GameObject gameUI;
     public GameObject tapToPlayUI;
     public GameObject tapToSpeedUpUI;
     public PlayerSpawnController spawnController;
+    public GameObject moneyText;
+    public GameObject canvas;
+    public Transform moneyTextPlace;
+    public Slider levelProgressSlider;
+    public TextMeshProUGUI moneyAmount;
 
     private void Awake()
     {
+        instance = this;
         Time.timeScale = 0f;
     }
     public void TapToPlay()
@@ -32,9 +41,7 @@ public class UIController : MonoBehaviour
                 if (spawnController.activePlayersLevel1[i]!= null)
                 {
                     spawnController.activePlayersLevel1[i].GetComponent<SplineFollower>().followSpeed += 4;
-
                 }
-
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -46,7 +53,6 @@ public class UIController : MonoBehaviour
                 if(spawnController.activePlayersLevel1[i] != null)
                 {
                     spawnController.activePlayersLevel1[i].GetComponent<SplineFollower>().followSpeed -= 4;
-
                 }
             }
         }
@@ -59,5 +65,14 @@ public class UIController : MonoBehaviour
     private void Update()
     {
         TapToSpeedUp();
+        moneyAmount.text = EconomyController.Instance.moneyAmount.ToString();
     }
+
+    public void MoneyTextDisplayer()
+    {
+        var moneytext = Instantiate(moneyText,moneyTextPlace.position , Quaternion.identity);
+        moneytext.transform.SetParent(canvas.transform);
+    }
+
+   
 }

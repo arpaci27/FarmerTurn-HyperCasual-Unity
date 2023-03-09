@@ -12,7 +12,7 @@ public class PlayerMergeController : MonoBehaviour
     public GameObject player2Prefab;
 
 
-    public void MergePlayers()
+    public void MergePlayers(int price)
     {
         List<GameObject> temp = new List<GameObject>();
         if(spawnController.activePlayersLevel1.Count >= 2)
@@ -29,6 +29,12 @@ public class PlayerMergeController : MonoBehaviour
                 temp[i].transform.DOMove(centralPoint, 0.5f).OnComplete(() => {
                     temp[0].SetActive(false); temp[1].SetActive(false);
                 });
+                if(EconomyController.Instance.moneyAmount >= price)
+                {
+                    EconomyController.Instance.moneyAmount -= price;
+
+                }
+                
             }
             spawnController.AddPlayer2(player2Prefab);
         }

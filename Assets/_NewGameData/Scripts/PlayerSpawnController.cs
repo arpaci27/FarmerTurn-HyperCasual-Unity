@@ -24,20 +24,31 @@ public class PlayerSpawnController : MonoBehaviour
 
     public void AddPlayer1(GameObject playerPrefab)
     {
-        var player = Instantiate(playerPrefab, spawnPlace.transform.position, Quaternion.identity);
-        player.GetComponent<SplineFollower>().spline = splineComputer;
-        player.GetComponent<PlayerInteractController>().dropPlace = dropPlace;
-        activePlayersLevel1.Add(player);
-        player.transform.DOPunchScale(Vector3.one, 0.5f, 10);
+        if(EconomyController.Instance.moneyAmount >= 200)
+        {
+            EconomyController.Instance.DecreaseMoney(200);
+            var player = Instantiate(playerPrefab, spawnPlace.transform.position, Quaternion.identity);
+            player.GetComponent<SplineFollower>().spline = splineComputer;
+            player.GetComponent<PlayerInteractController>().dropPlace = dropPlace;
+            activePlayersLevel1.Add(player);
+            player.transform.DOPunchScale(Vector3.one, 0.5f, 10);
+        }
+        
 
     }
     public void AddPlayer2(GameObject playerPrefab)
     {
-        var player = Instantiate(playerPrefab, spawnPlace.transform.position, Quaternion.identity);
-        player.GetComponent<SplineFollower>().spline = splineComputer;
-        player.GetComponent<PlayerInteractController>().dropPlace = dropPlace;
-        activePlayersLevel2.Add(player);
-        player.transform.DOPunchScale(Vector3.one, 0.5f, 10);
+        if(EconomyController.Instance.moneyAmount >= 300)
+        {
+            EconomyController.Instance.DecreaseMoney(300);
+
+            var player = Instantiate(playerPrefab, spawnPlace.transform.position, Quaternion.identity);
+            player.GetComponent<SplineFollower>().spline = splineComputer;
+            player.GetComponent<PlayerInteractController>().dropPlace = dropPlace;
+            activePlayersLevel2.Add(player);
+            player.transform.DOPunchScale(Vector3.one, 0.5f, 10);
+        }
+      
 
     }
 }

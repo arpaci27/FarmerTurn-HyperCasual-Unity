@@ -65,11 +65,11 @@ public class PlayerInteractController : MonoBehaviour
         int stackco = stackParent.childCount;
         for (int i = 0; i < stackco; i++)
         {
-            stackParent.transform.GetChild(0).DOMove(dropPlace.transform.position, 0.4f);
+            stackParent.transform.GetChild(0).DOMove(dropPlace.transform.position, 0.8f).OnComplete(() => UIController.instance.MoneyTextDisplayer());
             stackParent.GetChild(0).SetParent(null);
-            //var moneytext = Instantiate(moneyText, Vector3.zero, Quaternion.identity);
-            //moneytext.transform.SetParent(canvas.transform);
-            //Destroy(moneytext, 1f);
+            EconomyController.Instance.moneyAmount += 5;
+            EconomyController.Instance.stackedAmount++;
+
         }
         max.gameObject.SetActive(false);
         yield return new WaitForSeconds(0.5f);
