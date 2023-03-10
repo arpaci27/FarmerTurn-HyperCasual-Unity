@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
@@ -16,7 +17,10 @@ public class UIController : MonoBehaviour
     public GameObject canvas;
     public Transform moneyTextPlace;
     public Slider levelProgressSlider;
+    public TextMeshProUGUI sliderBarText;
     public TextMeshProUGUI moneyAmount;
+
+    public GameObject victoryUI;
 
     private void Awake()
     {
@@ -30,6 +34,8 @@ public class UIController : MonoBehaviour
         Time.timeScale = 1f;
 
     }
+
+    
 
     public void TapToSpeedUp()
     {
@@ -66,6 +72,20 @@ public class UIController : MonoBehaviour
     {
         TapToSpeedUp();
         moneyAmount.text = EconomyController.Instance.moneyAmount.ToString();
+        levelProgressSlider.value = EconomyController.Instance.stackedAmount;
+        sliderBarText.text = levelProgressSlider.value.ToString();
+        if (levelProgressSlider.value == 200)
+        {
+            gameUI.SetActive(false);
+            victoryUI.SetActive(true);
+        }
+    }
+
+
+
+    public void NextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void MoneyTextDisplayer()

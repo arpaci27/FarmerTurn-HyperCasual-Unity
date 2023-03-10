@@ -24,9 +24,9 @@ public class PlayerSpawnController : MonoBehaviour
 
     public void AddPlayer1(GameObject playerPrefab)
     {
-        if(EconomyController.Instance.moneyAmount >= 200)
+        if(EconomyController.Instance.moneyAmount >= 100)
         {
-            EconomyController.Instance.DecreaseMoney(200);
+            EconomyController.Instance.DecreaseMoney(100);
             var player = Instantiate(playerPrefab, spawnPlace.transform.position, Quaternion.identity);
             player.GetComponent<SplineFollower>().spline = splineComputer;
             player.GetComponent<PlayerInteractController>().dropPlace = dropPlace;
@@ -38,9 +38,9 @@ public class PlayerSpawnController : MonoBehaviour
     }
     public void AddPlayer2(GameObject playerPrefab)
     {
-        if(EconomyController.Instance.moneyAmount >= 300)
+        if(EconomyController.Instance.moneyAmount >= 200)
         {
-            EconomyController.Instance.DecreaseMoney(300);
+            EconomyController.Instance.DecreaseMoney(200);
 
             var player = Instantiate(playerPrefab, spawnPlace.transform.position, Quaternion.identity);
             player.GetComponent<SplineFollower>().spline = splineComputer;

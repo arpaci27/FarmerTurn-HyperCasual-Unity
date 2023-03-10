@@ -884,7 +884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stackParent: {fileID: 7592625563489179801}
   dropPlace: {fileID: 0}
-  carryCapacity: 5
+  carryCapacity: 6
   max: {fileID: 7592625561693651119}
   moneyText: {fileID: 0}
   moneyRect: {fileID: 0}
